@@ -1,5 +1,5 @@
 //npm install -g @ionic/cli
-//ionic start NotesApp blank --type=angular
+//ionic start NotesApp blank --type=react
 //cd NotesApp
 //ionic serve
 //paste the code in src/pages/Home.tsx
