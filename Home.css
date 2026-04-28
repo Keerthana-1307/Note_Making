@@ -1,0 +1,204 @@
+/*paste the code in src/pages/Home.css*/
+/* Page background */
+.notes-content {
+  --background: none;
+}
+
+/* Header toolbars */
+
+
+.app-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+}
+
+.header-badge {
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+/* Search bar */
+.notes-searchbar {
+  --border-radius: 20px;
+  --box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 4px 8px;
+}
+
+/* Empty state */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  opacity: 0.65;
+  text-align: center;
+  padding: 24px;
+}
+
+.empty-icon {
+  font-size: 64px;
+}
+
+.empty-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.empty-sub {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Notes grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 14px;
+  padding: 16px;
+}
+
+/* Note card */
+.note-card {
+  border-radius: 18px;
+  padding: 14px 13px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  min-height: 130px;
+  transition: opacity 0.25s ease, transform 0.15s ease;
+}
+
+.note-card:active {
+  transform: scale(0.97);
+}
+
+.note-done {
+  opacity: 0.72;
+}
+
+/* Card title */
+.note-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  word-break: break-word;
+}
+
+.note-title.struck {
+  text-decoration: line-through;
+}
+
+/* Card content */
+.note-content {
+  font-size: 12.5px;
+  margin: 0;
+  line-height: 1.5;
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.note-content.struck {
+  text-decoration: line-through;
+}
+
+/* Card footer */
+.note-footer {
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.note-date {
+  font-size: 10px;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+/* Action buttons */
+.act-btn {
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  transition: transform 0.12s ease;
+}
+
+.act-btn:active {
+  transform: scale(0.9);
+}
+
+
+
+/* FAB button */
+.fab-btn {
+  --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal */
+
+.modal-title-text {
+  font-weight: 700;
+}
+
+
+
+.modal-body {
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Input items */
+.modal-input-item {
+  --border-radius: 14px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin: 0;
+}
+
+.textarea-item {
+  align-items: flex-start;
+}
+
+.modal-label {
+  font-weight: 600;
+}
+
+.modal-input {
+  --padding-top: 12px;
+}
+
+.modal-textarea {
+  --padding-top: 12px;
+  min-height: 140px;
+}
+
+/* Save button */
+.save-button {
+  --border-radius: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  height: 48px;
+  margin-top: 6px;
+}
